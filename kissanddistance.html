@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dating</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="quest3.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700&display=swap" rel="stylesheet">
+
+
+    <style>
+        canvas {
+            
+            border: solid 4vw #000;
+            height: 80vh;
+            position:absolute;
+            left: 6vw;
+            top: 0vh;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="slide one">
+            <div class="circlewrapper">
+                <a href="index.html">
+                    <div class=" circle circle1 " id="home"></div>
+                </a>
+                <a href="dating3.html">
+                    <div class=" circle circle2 " id="dating"></div>
+                </a>
+
+                <a href="health.html">
+                    <div class=" circle circle3 " id="health"></div>
+                </a>
+                <a href="distancing.html">
+                    <div class="  circle circle4 " id="distancing"></div>
+                </a>
+                <a href="">
+                    <div class="circle circle5">
+                        <img class="locknav" id="unlock" src="pics/unlock.png" alt="lockicon">
+
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+
+        <div class="slide two">
+            <p class="scoredisplay" id="scoredisplay"></p>
+            <img class="arrows">
+
+           <canvas class="canvas" id="canvas"> </canvas>
+           <script src="kissanddistance.js"></script>
+            
+
+
+
+
+        
+    </div>
+
+</body>
+
+</html>

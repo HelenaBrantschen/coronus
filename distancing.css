@@ -1,0 +1,19 @@
+.two {
+    background-color: var(--topicyellow);
+}
+
+
+
+
+.topictitle{   
+color: var(--topicblue);
+
+}
+.topicsubtitle{
+  color: var(--topicblue);}
+.caps{
+  color: var(--topicblue);}
+.fliesstext{
+    color: var(--topicblue);
+}
+

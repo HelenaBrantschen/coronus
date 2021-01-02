@@ -1,0 +1,189 @@
+body {
+    --topicgreen: #9FE0CD;
+    --topicmagenta: #D03189;
+    --topicyellow: #F5F49A;
+    --topicblue: #051845;
+    --mygrey: #E5E5E5;
+    --skincolor:rgb(215, 192, 177);
+    width: 1116px;
+    overflow-y: hidden;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 1.5;
+    background-color: #051845;
+
+}
+
+
+span{line-height: 1;
+
+}
+
+p{margin-bottom:1vh;}
+
+.topictitle{     
+    
+    line-height: 1;
+    font-size:55pt;
+    margin-left: 10%;
+    margin-top: 5%;
+    color: #D03189;;
+
+}
+.topicsubtitle{
+    line-height: 1.1;
+    font-size:42pt; }
+
+.caps{
+    line-height: 1.3;
+text-transform: uppercase; }
+.legende{font-size: 15pt;}
+.highlight{
+    color: var(--topicgreen);
+}
+
+strong{font-family:Roboto;
+font-weight: bold;}
+
+
+.lock {
+position:relative;
+width:0%;
+height:0%;
+}
+/* horizontal scroll */
+.slide {
+    width: 400vw;
+    height: 100%;
+}
+
+
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    height: 100vh;
+    align-items: stretch;
+}
+
+.imgarticles {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+
+}
+
+.imgcontainer {
+    flex-basis: 27vw;
+    flex-grow: 1;
+    flex-grow: 1;
+
+}
+
+/* different sections */
+.one {
+    width: 6%;
+    /* Set the width of the sidebar */
+    position: fixed;
+    /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1;
+    /* Stay on top */
+    background-color:white ;
+    opacity: 0.9;
+}
+
+.two {
+    width: 90%;
+    
+    height: 100%;
+}
+
+.three {
+    width: 10%;
+    margin-top: 3%;
+    height: 10%;
+   
+    transform: scale(0.3,0.3);
+    position: relative;
+    display: none;
+
+} 
+
+/* navigation */
+.circlewrapper {
+    padding-top: 50%;
+    margin: 0% auto;
+    height: 100vh;
+    width: 40%;
+    display: flex;
+    flex-flow: column wrap;
+   
+}
+a{ margin-top: 150%;
+    margin-bottom:150%;
+padding-bottom: auto; 
+}
+.circle {position:relative;
+    width: 100%;
+    height:auto;
+    border-radius: 50%;
+   padding-top: 100%;
+  
+}
+.circle1 {
+    background-color: var(--topicblue);
+   
+}
+.circle2 {
+    background-color: var(--topicmagenta);
+}
+.circle3 {
+    background-color: var(--topicgreen);
+}
+.circle4 {
+    background-color: var(--topicyellow);
+}
+
+.circle5 {
+    background-color: var(--mygrey);
+    text-align: center;
+    position: relative;
+}
+
+.locknav {
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    height:auto;
+    top:-5%
+     
+}
+
+/* helplines 
+div {
+    border: 1px solid red;
+} */
+
+.div2 {
+    line-height: 1;
+    font-size:30pt;
+    margin-left: 20%;
+    margin-top: 5%;
+    color: #ffff;
+    text-align: right;
+
+}
+
+.div3 {
+   width: 250%;
+    transform: scale(0.3,0.3);
+    height: 10%;
+    margin-left: 0%;
+   position: relative;
+}
+
+
+
+

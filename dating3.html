@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dating</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style3.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;500;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="slide one">
+            <div class="circlewrapper">
+                <a href="index.html">
+                    <div class=" circle circle1 " id="home"></div>
+                </a>
+                <a href="dating3.html">
+                    <div class=" circle circle2 " id="dating"></div>
+                </a>
+
+                <a href="health.html">
+                    <div class=" circle circle3 " id="health"></div>
+                </a>
+                <a href="distancing.html">
+                    <div class="  circle circle4 " id="distancing"></div>
+                </a>
+                <a onclick="alert1();">
+                    <div class="circle circle5">
+                        <img class="locknav" id="unlock" src="pics/unlock.png" alt="lockicon">
+
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+        <div class="slide two">
+
+            <div class="parent">
+                <div class="div11">
+                    <p class="topictitle"> You chose <span><br></span> the topic <span><br></span> <strong
+                            class="topicsubtitle">Dating
+                            Life</strong></p>
+                    <p class="caps">Finish the 3 quests</p>
+                    <p class="fliesstext">and change the situation of the coronus </p>
+                </div>
+                <div class="div2"><a href="quest1.html">
+                        <p class="fliesstext">First quest <span><br></span> <strong>Kiss & distance </strong></p>
+                        <div class=" circleb circle6 circlemagenta" id="isolvedquest1">
+                            <img class=" lock1" id="lock1" src="pics/unlock.png" alt="">
+                    </a> </div>
+
+
+            </div>
+            <div class="div3 ">
+                <div class="imgcontainer">
+                    <img class="illu" src="mobile3love.png" alt="illu_datingmain">
+                </div>
+            </div>
+            <div class="fliesstext div4 ">
+                <p>Play every quest to unlock the final lock and to see what impact you had on the world
+                    around you.</p>
+            </div>
+        </div>
+    </div>
+    <div class="slide three">
+       
+        <div class="grid2">
+            <div class="box1grid"><a href="quest2.html">
+
+                <p> second quest <span><br></span><strong>Personality quizz</strong></p>
+            </a></div>
+            <div class="box2grid"><a href="quest2.html">
+
+                <div class=" circleb circle7 circledarkblue" id="isolvedquest2">
+                    <img class=" lock2" id="lock2" src="pics/unlock.png" alt="">
+                </div>
+            </a></div>
+            
+            <div class="box3grid">
+                <a href="quest3.html" id="quest3">
+
+                    <div class=" circleb circle8 circledarkblue" id="isolvedquest3"><img class=" lock3"
+                            id="lock3" src="pics/unlock.png" alt="">
+                    </div>
+            </div>
+            <div class="box4grid">
+                <p> third quest <span><br></span><strong>Online Dating</strong></p>
+                </a>
+            </div>
+            <div class="box5grid">
+
+                <div class=" circleb circle10">
+                    <img class=" lockx " src="pics/unlock.png" alt="">
+                </div>
+                <svg class="path" id="biglock" width="230" height="230" viewBox="0 0 230 230" fill="none"
+                    xmlns="http://www.w3.org/2000/svg">
+                    <path
+                        d="M115 5C129.445 5 143.749 7.84523 157.095 13.3733C170.441 18.9013 182.567 27.0038 192.782 37.2183C202.996 47.4327 211.099 59.559 216.627 72.9048C222.155 86.2507 225 100.555 225 115C225 129.445 222.155 143.749 216.627 157.095C211.099 170.441 202.996 182.567 192.782 192.782C182.567 202.996 170.441 211.099 157.095 216.627C143.749 222.155 129.445 225 115 225C100.555 225 86.2506 222.155 72.9048 216.627C59.559 211.099 47.4327 202.996 37.2182 192.782C27.0038 182.567 18.9012 170.441 13.3732 157.095C7.84522 143.749 4.99999 129.445 5 115C5.00001 100.555 7.84525 86.2506 13.3733 72.9048C18.9013 59.559 27.0038 47.4326 37.2183 37.2182C47.4328 27.0038 59.5591 18.9012 72.9049 13.3732C86.2507 7.84522 100.555 4.99999 115 5L115 5Z"
+                        stroke="#4EE6B7" stroke-width="10" stroke-linecap="round" /> </svg>
+
+            </div>
+            <div class="box6grid">
+                <p>to unlock this option you have to play all the topics <span><br></span> <strong
+                        class=" legende highlight">
+                        <span id="status"></span>/9 Quests solved</strong></p>
+            </div>
+        </div>
+
+
+    </div>
+    </div>
+    </div>
+
+    <div class="dottedline"></div>
+
+
+    <script>
+
+
+
+
+
+        // deeclared sessionstorages exist bolean true or undefined*** was set on the last page of each quest
+        var quest1status = sessionStorage.getItem("quest1solved");
+        var quest2status = sessionStorage.getItem("quest2solved");
+        var quest3status = sessionStorage.getItem("quest3solved");
+        var quest4status = sessionStorage.getItem("quest4solved");
+        var quest5status = sessionStorage.getItem("quest5solved");
+        var quest6status = sessionStorage.getItem("quest6solved");
+        var quest7status = sessionStorage.getItem("quest7solved");
+        var quest8status = sessionStorage.getItem("quest8solved");
+        var quest9status = sessionStorage.getItem("quest9solved");
+
+        var sessionstorage = sessionStorage.length;
+
+
+        var status = document.getElementById("status")
+
+        console.log(quest1status);
+
+
+
+
+        // adds class="questsolved" to the quest  which creeates a green border around the circle and should erease the lock
+        console.log(sessionstorage, "sessionstorage");
+
+        if (quest1status == "true") {
+            document.getElementById("isolvedquest1").classList.add("questsolved");
+            document.getElementById("lock1").classList.add("byelock");
+        }
+        if (quest2status == "true") {
+            document.getElementById("isolvedquest2").classList.add("questsolved");
+            document.getElementById("lock2").classList.add("byelock");
+        }
+        if (quest3status == "true") {
+            document.getElementById("isolvedquest3").classList.add("questsolved");
+            document.getElementById("lock3").classList.add("byelock");
+        }
+        
+
+        // last lock counts session storrage lenght and fires an animation, and adds the specific number of solved quest under the last lock in span with id="status"
+        if (sessionstorage == "undefined") {
+            sessionstorage = 0;
+            status.innerHTML = sessionstorage;
+
+        }
+        if (sessionstorage == 0) {
+            document.getElementById("status").innerHTML = sessionstorage;
+
+        } else if (sessionstorage == 1) {
+            document.getElementById("biglock").classList.add("path9");
+            document.getElementById("status").innerHTML = sessionstorage;
+
+        } else if (sessionstorage == 2) {
+            document.getElementById("biglock").classList.add("path8");
+            document.getElementById("status").innerHTML = sessionstorage;
+
+        } else if (sessionstorage == 3) {
+            document.getElementById("biglock").classList.add("path7");
+            document.getElementById("status").innerHTML = sessionstorage;
+
+        } else if (sessionstorage == 4) {
+            document.getElementById("biglock").classList.add("path6");
+            document.getElementById("status").innerHTML = sessionstorage;
+        } else if (sessionstorage == 5) {
+            document.getElementById("biglock").classList.add("path5");
+            document.getElementById("status").innerHTML = sessionstorage;
+        } else if (sessionstorage == 6) {
+            document.getElementById("biglock").classList.add("path4");
+            document.getElementById("status").innerHTML = sessionstorage;
+        } else if (sessionstorage == 7) {
+            document.getElementById("biglock").classList.add("path3");
+            document.getElementById("status").innerHTML = sessionstorage;
+        } else if (sessionstorage == 8) {
+            document.getElementById("biglock").classList.add("path2");
+            document.getElementById("status").innerHTML = sessionstorage;
+        } else if (sessionstorage == 9) {
+            window.location.href="#biglock"
+            document.getElementById("biglock").classList.add("path1");
+            document.getElementById("status").innerHTML = sessionstorage;
+            document.getElementById("unlock").classList.add("bylock")
+            redirectfinal()
+        }
+
+
+
+
+        function redirectfinal(){
+            window.location.href="unlock.html"
+        }
+        
+function alert1(){
+    Swal.fire({
+        icon:"info",
+        title: "Ouups",
+        text: 'You have to solve all the quests to unlock this page',
+        timer: 3500,
+        confirmButtonColor: '#9FE0CC',
+        confirmButtonText: 'Okey got it',
+
+
+  showClass: {
+    popup: 'animate__animated animate__fadeInDown'
+  },
+  hideClass: {
+    popup: 'animate__animated animate__fadeOutUp'
+  }
+})
+}
+
+
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,397 @@
+body {
+    --topicgreen: #9FE0CD;
+    --topicmagenta: #D03189;
+    --topicyellow: #F5F49A;
+    --topicblue: #051845;
+    --mygrey: #E5E5E5;
+    --skincolor: rgb(215, 192, 177);
+    width: 1116px;
+    overflow-y: hidden;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    font-weight: 100;
+    line-height: 1.5;
+    background-color: #051845;
+}
+
+span {
+    line-height: 1;
+    color:white;
+    z-index: 999;
+}
+
+p {
+    margin-bottom: 1vh;
+}
+
+.yellowText {
+    margin-bottom: 1vh;
+    color: var(--topicyellow);
+    line-height: 0em;
+}
+
+.redText {
+    margin-bottom: 1vh;
+    color: var(--topicmagenta);
+    line-height: 0;
+}
+
+.greenText {
+    margin-bottom: 1vh;
+    color: var(--topicgreen);
+    line-height: 0;
+}
+
+.whiteText {
+    color: white;
+}
+
+
+.whiteText .chugle {
+    display: none;
+}
+
+
+.chugle {
+    font-size: 1.5em;
+}
+
+.percentages1 {
+    position: absolute;
+    margin-left: -5%;
+    margin-top: 50%;
+    font-size: 65%;
+    
+}
+
+.percentages2 {
+    position: absolute;
+    margin-left: 0%;
+    margin-top: 50%;
+    left: 50%;
+    font-size: 65%;
+}
+
+.percentages3 {
+    position: absolute;
+    margin-left: 5%;
+    margin-top: 50%;
+    left: 100%;
+    font-size: 65%;
+    width: 100%;
+}
+
+.percentages4 {
+    position: relative;
+    margin-left: 0%;
+    margin-top: 34.3%;
+    left: 30%;
+    font-size: 65%;
+    width: 100%;
+}
+
+.percentages5 {
+    position: relative;
+    margin-left: 0%;
+    margin-top: -12.2%;
+    left: 63.5%;
+    font-size: 65%;
+    width: 100%;
+}
+
+.topictitle {
+    line-height: 1;
+    font-size: 55pt;
+    margin-left: 10%;
+    margin-top: 5%;
+    color: #D03189;
+    ;
+}
+
+.topicsubtitle {
+    line-height: 1.1;
+    font-size: 42pt;
+}
+
+.caps {
+    line-height: 1.3;
+    text-transform: uppercase;
+}
+
+.legende {
+    font-size: 15pt;
+}
+
+.highlight {
+    color: var(--topicgreen);
+}
+
+strong {
+    font-family: Roboto;
+    font-weight: bold;
+}
+
+.lock {
+    position: relative;
+    width: 0%;
+    height: 0%;
+}
+
+/* horizontal scroll */
+
+.slide {
+    width: 400vw;
+    height: 100%;
+}
+
+.wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 200vw;
+    height: 100vh;
+    align-items: stretch;
+}
+
+.imgarticles {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.imgcontainer {
+    flex-basis: 27vw;
+    flex-grow: 1;
+    flex-grow: 1;
+}
+
+/* different sections */
+
+.one {
+    width: 6%;
+    /* Set the width of the sidebar */
+    position: fixed;
+    /* Fixed Sidebar (stay in place on scroll) */
+    z-index: 1;
+    /* Stay on top */
+    background-color: white;
+    opacity: 0.9;
+}
+
+.two {
+    width: 49%;
+    height: 100%;
+    padding-left: 5%;
+    position: relative;
+}
+
+.three {
+    width: 92%;
+    margin-top: 3%;
+    height: 100%;
+    position: relative;
+}
+
+.four {
+    width: 135%;
+    margin-top: 3%;
+    height: 100%;
+    position: relative;
+}
+
+.five {
+    width: 8%;
+    
+    height: 100%;
+    position: relative;
+}
+
+/* navigation */
+
+.circlewrapper {
+    padding-top: 50%;
+    margin: 0% auto;
+    height: 100vh;
+    width: 40%;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+a {
+    margin-top: 150%;
+    margin-bottom: 150%;
+    padding-bottom: auto;
+}
+
+.circle {
+    position: relative;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    padding-top: 100%;
+}
+
+.circle1 {
+    background-color: var(--topicblue);
+}
+
+.circle2 {
+    background-color: var(--topicmagenta);
+}
+
+.circle3 {
+    background-color: var(--topicgreen);
+}
+
+.circle4 {
+    background-color: var(--topicyellow);
+}
+
+.circle5 {
+    background-color: var(--mygrey);
+    text-align: center;
+    position: relative;
+}
+
+.locknav {
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    height: auto;
+    top: -5%
+}
+
+/* helplines 
+div {
+    border: 1px solid red;
+} */
+
+.div2 {
+    line-height: 1;
+    font-size: 30pt;
+    margin-left: 20%;
+    margin-top: 5%;
+    color: #ffff;
+    text-align: right;
+}
+
+.div3 {
+    width: 250%;
+    transform: scale(0.3, 0.3);
+    height: 10%;
+    margin-left: 0%;
+    position: relative;
+}
+
+.Ballon {
+    width: 40%;
+    margin-left: 3%;
+    margin-top: 1vh;
+    transform: rotate(10deg);
+    position: absolute;
+    animation: BallonAni 2s;
+    transition: BallonAni ease-in-out 1s;
+}
+
+@keyframes BallonAni {
+    from {
+        top: 100%;
+        transform: scaleY(0.8);
+        transform: rotate(2deg);
+    }
+    to {
+        top: 43%;
+        transform: scaleY(1);
+        transform: rotate(10deg);
+    }
+}
+
+.div1 {
+    line-height: 1;
+    font-size: 3 0pt;
+    margin-left: -10%;
+    margin-top: 18%;
+    color: #ffff;
+    text-align: left;
+}
+
+.partie {
+    padding-left: 2%;
+    padding-right: 10%;
+}
+
+.buttoncontainer {
+    margin-left: 5vw;
+    display: flex;
+    flex-direction: column-reverse;
+    flex-wrap: wrap;
+
+}
+
+.backbutton {
+    margin-top:10vh;
+    
+    width: 15vh;
+    height: 15vh;
+    border-radius: 50%;
+    background-color: #1730be;
+    font-weight: bolder;
+    border: none;
+    font-size: 60%;
+    position: relative;
+    order: 1;
+    margin-bottom: 3vh;
+    color: #051845;
+}
+
+.Datingbutton {
+    
+    width: 15vh;
+    height: 15vh;
+    border-radius: 50%;
+    background-color: #D03189;
+    font-weight: bolder;
+    border: none;
+    font-size: 60%;
+    position: relative;
+    margin-bottom: 3vh;
+    color: #051845;
+}
+
+.Healthbutton {
+    
+    width: 15vh;
+    height: 15vh;
+    border-radius: 50%;
+    background-color: #9FE0CD;
+    font-weight: bolder;
+    border: none;
+    font-size: 60%;
+    position: relative;
+    margin-bottom: 3vh;
+    color: #051845;
+}
+
+.SocialLifebutton {
+    
+    width: 15vh;
+    height: 15vh;
+    border-radius: 50%;
+    background-color: #F5F49A;
+    font-weight: bolder;
+    border: none;
+    font-size: 60%;
+    position: relative;
+    margin-bottom: 3vh;
+    color: #051845;
+}
+
+.bouton {
+    transition: transform ease-in-out .3s;
+   
+
+}
+
+.bouton:hover {
+    transform: scale(1.06);
+    filter: drop-shadow(0 0 1mm rgb(165, 165, 165));
+}

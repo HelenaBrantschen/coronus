@@ -1,0 +1,359 @@
+body {
+    background-color: #051845;
+}
+
+.partie1 {
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    fill: transparent;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: animate1 2s ease forwards;
+}
+
+.partie2 {
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    fill: transparent;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: animate4 2s ease forwards;
+}
+
+.partie3 {
+    position: absolute;
+    top: 20%;
+    left: 0%;
+    fill: transparent;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: animate9 2s ease forwards;
+}
+
+.partie4 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    fill: transparent;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: animate1 2s ease forwards;
+}
+
+.partie5 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    fill: transparent;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: animate2 2s ease forwards;
+}
+
+.partie6 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    fill: transparent;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: animate7 2s ease forwards;
+}
+
+.partie7 {
+    position: absolute;
+    top: 20%;
+    left: 100%;
+    fill: transparent;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: animate1 3.5s ease forwards;
+}
+
+.partie8 {
+    position: absolute;
+    top: 20%;
+    left: 100%;
+    fill: transparent;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: animate3 3.5s ease forwards;
+}
+
+.partie9 {
+    position: absolute;
+    top: 20%;
+    left: 100%;
+    fill: transparent;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: animate9 3.5s ease forwards;
+}
+
+.partie10 {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    fill: transparent;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: animate1 1s ease forwards;
+    display: none;
+}
+
+.partie11 {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    fill: transparent;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: animate6 1s ease forwards;
+    display: none;
+}
+
+.partie12 {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    fill: transparent;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: animate3 1s ease forwards;
+    display: none;
+}
+
+.partie13 {
+    position: absolute;
+    top: 20%;
+    left: 80%;
+    fill: transparent;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: animate2 1s ease forwards;
+    display: none;
+}
+
+.partie14 {
+    position: absolute;
+    top: 20%;
+    left: 65%;
+    fill: transparent;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: animate1 1s ease forwards;
+}
+
+.partie15 {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    fill: transparent;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: animate9 1s ease forwards;
+    display: none;
+}
+
+.partie16 {
+    position: absolute;
+    top: 20%;
+    left: 65%;
+    fill: transparent;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: animate2 5.5s ease forwards;
+}
+
+.partie17 {
+    position: absolute;
+    top: 20%;
+    left: 65%;
+    fill: transparent;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: animate7 5.5s ease forwards;
+}
+
+.partie18 {
+    position: absolute;
+    top: 20%;
+    left: 65%;
+    fill: transparent;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: animate7 5.5s ease forwards;
+}
+
+.partie19 {
+    position: absolute;
+    top: 20%;
+    left: 32%;
+    fill: transparent;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: animate7 5s ease forwards;
+}
+
+.partie20 {
+    position: absolute;
+    top: 20%;
+    left: 32%;
+    fill: transparent;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: animate1 5s ease forwards;
+}
+
+.partie21 {
+    position: absolute;
+    top: 20%;
+    left: 32%;
+    fill: transparent;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: animate3 5s ease forwards;
+}
+
+.partie22 {
+    position: absolute;
+    top: 20%;
+    left: 35%;
+    fill: transparent;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: animate7 1s ease forwards;
+}
+
+.partie23 {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    fill: transparent;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: animate7 1s ease forwards;
+}
+
+.partie24 {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    fill: transparent;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: animate7 1s ease forwards;
+}
+
+.partie25 {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    fill: transparent;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: animate7 1s ease forwards;
+}
+
+.partie26 {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    fill: transparent;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: animate7 1s ease forwards;
+}
+
+.partie27 {
+    position: absolute;
+    top: 20%;
+    left: 40%;
+    fill: transparent;
+    stroke-dasharray: 1000;
+    stroke-dashoffset: 1000;
+    animation: animate7 1s ease forwards;
+}
+
+@keyframes animate9 {
+    from {
+        stroke-dashoffset: 1000;
+    }
+    to {
+        stroke-dashoffset: 920;
+    }
+}
+
+@keyframes animate8 {
+    from {
+        stroke-dashoffset: 1000;
+    }
+    to {
+        stroke-dashoffset: 860;
+    }
+}
+
+@keyframes animate7 {
+    from {
+        stroke-dashoffset: 1000;
+    }
+    to {
+        stroke-dashoffset: 780;
+    }
+}
+
+@keyframes animate6 {
+    from {
+        stroke-dashoffset: 1000;
+    }
+    to {
+        stroke-dashoffset: 700;
+    }
+}
+
+@keyframes animate5 {
+    from {
+        stroke-dashoffset: 1000;
+    }
+    to {
+        stroke-dashoffset: 620;
+    }
+}
+
+@keyframes animate4 {
+    from {
+        stroke-dashoffset: 1000;
+    }
+    to {
+        stroke-dashoffset: 540;
+    }
+}
+
+@keyframes animate3 {
+    from {
+        stroke-dashoffset: 1000;
+    }
+    to {
+        stroke-dashoffset: 460;
+    }
+}
+
+@keyframes animate2 {
+    from {
+        stroke-dashoffset: 1000;
+    }
+    to {
+        stroke-dashoffset: 380;
+    }
+}
+
+@keyframes animate1 {
+    from {
+        stroke-dashoffset: 1000;
+    }
+    to {
+        stroke-dashoffset: 300;
+    }
+}

@@ -1,0 +1,634 @@
+body {
+    overflow: hidden;
+    --topicgreen: #9FE0CD;
+    --topicmagenta: #D03189;
+    --topicyellow: #F5F49A;
+    --topicblue: #051845;
+    --mygrey: #E5E5E5;
+
+    --skincolor: rgb(215, 192, 177);
+}
+
+/* no slide anymore */
+.wrapper {
+    width: 100vw;
+    height: 97vh;
+}
+.one{
+    height: 100%;
+}
+
+.two {position: relative;
+    width: 100%;
+    height: 100%;
+    overflow:hidden;
+
+    background-color: var(--topicblue)
+}
+
+.three {
+    width: 0%;
+}
+/* specific styling on bg */
+
+button {
+    background-color: var(--topicblue);
+    border: none;
+    width: 20vh;
+    height:10vh;
+}
+button.magenta {
+    background-color: var(--topicmagenta);
+    border: none;
+
+}
+button.magenta.round {
+    background-color: var(--topicmagenta);
+    border: none;
+    border-radius: 50%;
+    width:18vh;
+    height:18vh;
+        font-size: 60%
+
+
+}
+button.magenta.round.hell{
+    background-color:#E8C7C5;
+    border: none;
+    border-radius: 50%;
+    width:18vh;
+    height:18vh;
+        font-size: 60%
+
+
+
+}
+button.green{
+    background-color: var(--topicgreen);
+    border: none;
+}
+button.green.round {
+    background-color: var(--topicgreen);
+    border: none;
+    border-radius: 50%;
+    width:18vh;
+    height:18vh;
+    color: black;
+    font-size: 60%
+
+}
+button.green.round.hell{
+    background-color:#DDF4ED;
+    border: none;
+    border-radius: 50%;
+    width:18vh;
+    height:18vh;
+    font-size: 60%
+
+}
+button.yellow.round.hell{
+    background-color:#f1e551;
+    border: none;
+    border-radius: 50%;
+    width:18vh;
+    height:18vh;
+        font-size: 60%
+
+
+}
+.btnquest4{position:absolute;
+top: 70vh;
+left:70vw;}
+.btnquest7{position:absolute;
+    top: 70vh;
+    left:70vw;}
+
+
+
+/* grid for quest 1 */
+
+.parentquest1 {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 2fr 5fr 5fr 1fr ;
+    grid-template-rows: 10% 45% 40% 5%;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 100vh;
+}
+
+.div1quest1 {
+    grid-area: 2 / 2 / 3 / 3;
+    display: grid;
+
+}
+
+.div2quest1 {
+    grid-area: 2 / 3 / 3 / 4;
+    display: grid;
+}
+
+.div3quest1 {
+    grid-area: 3 / 2 / 4 / 3;
+    text-align: left;
+    display:grid;
+    align-content:end;
+    justify-content: start;
+}
+
+.div4quest1 {
+    grid-area: 3 / 3 / 4 / 4;
+    display:grid;
+
+    align-content: end;
+    justify-content: end;
+
+    width: 100%;
+    height:auto;
+}
+
+.descript{
+    width:100%;
+    height:auto;
+}
+
+.scoredisplay{
+    z-index: 1000;
+    position: absolute;
+    top:8vh;
+    left: 50vw;
+    color: var(--topicblue);
+}
+
+
+/* looser winner grid 1 */
+.gridlose1 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr 2fr 4fr 2fr 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 100vh;
+
+
+    }
+    
+    .div1lose1 {
+        grid-area: 2 / 1 / 3 / 2; 
+        display:grid;
+    }
+    .div2lose1 {
+        display:grid;
+
+         grid-area: 3 / 2 / 4 / 4; 
+    }
+    .div3lose1 {        
+         grid-area: 4 / 2 / 5 / 3; 
+         display:grid;
+         align-self: center;
+
+    }
+    .div4lose1 {
+         grid-area: 4 / 3 / 5 / 4; 
+         display:grid;
+         align-self: center;
+         transform: translateX(-10%);
+
+    }
+
+    .div1win1 { grid-area: 2 / 1 / 3 / 2;
+    display:grid; }
+.div2win1 { grid-area: 3 / 2 / 4 / 4; 
+    display:grid;}
+.div3win1 { grid-area: 4 / 2 / 5 / 3;
+    display:grid; }
+
+
+/* quest1.html */
+.sprechblase1 {
+    position: relative;
+    height: 60%;
+    width: 98%;
+    background-color: white;
+    text-align: left;
+    border-radius: 20px 20px 20px 0;
+}
+.sprechblase1b {
+    position: relative;
+    height: 60%;
+    width: 98%;
+    background-color: white;
+    text-align: left;
+    align-self: end;
+    justify-self: end;
+    border-radius: 20px  20px 0 20px;
+
+}
+.insprechblase1 {
+    margin: 0;
+    padding:15%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    color:var(--topicblue);
+
+
+}
+
+
+.iconalbert{
+    position: absolute;
+    width: 15vh;
+    height: auto;
+    top: 75%;
+    transform: translateY(-75%);
+left: 25vw;
+}
+.iconcoronus{     position: absolute;
+    width: 15vh;
+    height: auto;
+    top: 25%;
+    transform: translateY(-25%);
+left: 25vw;
+}
+
+.iconyou{
+    position: absolute;
+    width: 15vh;
+    height: auto;
+    top: 75%;
+    transform: translateY(-75%);
+left: 25vw;
+}
+.iconalien{     position: absolute;
+    width: 15vh;
+    height: auto;
+    top: 75%;
+    transform: translateY(-75%);
+left: 25vw;
+}
+
+.gamebutton{
+    font-size: 0.6em;
+
+
+}
+.arrows{
+    height: 10vh;
+    width:auto;
+    position:absolute;
+    top: 90vh;
+    left: 10vw;
+    
+    }
+
+
+/* congrats1 */
+
+
+    .score{
+        display: grid;
+        align-self: start;
+        justify-self: start;
+         margin-left: 7vw; 
+            color:white;
+            width: 9ch;
+        
+        }
+
+
+/* grid for quest 3 */
+
+.parentquest3 {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 5fr repeat(2, 2.5fr) 1fr;
+    grid-template-rows: 10% 45% 30% 15%;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+    height: 100vh;
+}
+
+.div1quest3 {
+    grid-area: 2 / 1 / 5 / 3;
+    
+}
+
+.div2quest3 {
+    grid-area: 2 / 3 / 3 / 5;
+}
+
+.div3quest3 {
+    grid-area: 3 / 3 / 4 / 4;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    color: var(--topicblue);
+
+    width:25vh;
+    height: 25vh;
+    border-radius: 50%;
+
+
+}
+
+.div4quest3 {
+    grid-area: 3 / 4 / 4 / 5;
+    text-align: center;
+    align-content: center;
+    justify-content: center;
+    color: var(--topicblue);
+    width:25vh;
+    height: 25vh;
+    border-radius: 50%;
+}
+
+
+
+/* quest3.html */
+
+.handywrap {
+    align-content: end;
+    justify-content: start;
+    position: relative;
+    margin-left: 12%;
+    height: 90vh;
+    width: 80%;
+}
+
+.handy {
+    position: relative;
+    display: grid;
+    height: 100%;
+}
+
+
+
+.buttonquest3 {
+    width: 60%;
+    height: auto;
+    background-color: var(--skincolor);
+    color: white;
+}
+
+.sprechblase {
+    position: relative;
+    height: 80%;
+    width: 100%;
+    background-color: white;
+    text-align: center;
+    border-radius: 20px 20px 20px 0;
+
+}
+
+
+.insprechblase {
+    margin: 5%;
+    margin-top: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+color: var(--topicblue);
+}
+
+
+
+
+
+/* tinderdate.html and buttons */
+
+.screenwrap {
+    position: relative;
+    height: 82vh;
+    width: 82vh;
+    margin-left: 28%;
+    /*  margin left needs to be ajusted in reesponsive */
+    margin-top: 11.5vh;
+
+
+}
+
+.screen {
+    position: relative;
+    height: 100%;
+    width: auto;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-around;
+    align-items: flex-end;
+    padding-right: 37.5%;
+
+    
+}
+
+
+
+.handy2 {
+    position: absolute;
+    display: grid;
+    height: 140%;
+    width: auto;
+    top: 0%;
+    margin-left: 10%;
+
+}
+
+.next {
+    position: relative;
+    border-radius: 50%;
+    background-color: green;
+    height: 10vh;
+    width: 10vh;
+    margin-bottom: 8%;
+    left: -5%;
+    
+
+
+}
+
+.heart {
+    position: relative;
+    background-color: red;
+    border-radius: 50%;
+
+    height: 10vh;
+    width: 10vh;
+    margin-bottom: 8%;
+    left: -10%;
+
+}
+
+.msg {
+    position: relative;
+    border-radius: 50%;
+    margin-bottom: 5%;
+    background-color: var(--mygrey);
+
+    height: 10vh;
+    width: 10vh;
+    margin-bottom: 8%;
+    left: -8%;
+}
+
+.iconbtn {
+    position: relative;
+    width: 7vh;
+    height: auto;
+    margin: auto;
+}
+
+.iconx {
+    height: 50%;
+    width: auto;
+    padding-top: auto;
+
+}
+
+.iconmsg {
+    height: 55%;
+    width: auto;
+    padding-bottom: 10%;
+
+}
+
+.iconheart {
+    padding-top: 20%;
+    height: 70%;
+    width: auto;
+}
+.hidden{
+    position:absolute;
+    left:42vw;
+    top:70vh;
+z-index:-999;
+color:var(--topicmagenta);
+display:none;
+border-radius:50%;
+
+}
+
+.startagain{
+      z-index: 999;
+      display:initial;
+
+}
+
+
+.hidden2{ 
+    position:absolute;
+    background-color:var(--topicmagenta);
+    left:40vw;
+    top:55vh;
+z-index:-999;
+color:white;
+display:none;
+border-radius:50%;
+font-size: 60%;
+
+}
+.startvideochat{
+    z-index: 999;
+    display:initial;
+}
+
+/* videochat.html */
+
+
+
+#yourlover{ position:absolute;
+    left: 0;
+    top: 0;
+    width: auto;
+    height:100vh;
+   
+}
+#videoElement{
+    z-index: 1000;
+    position: absolute;
+    left: 0;
+    margin-left: 65vw;
+    top: 20vh;
+    width:20vh;
+    height: auto;
+   
+}
+.videocontainer{position:relative;
+
+    width: auto;
+    height:100%;
+
+}
+.screenshot{
+    position: absolute;
+    left: 85vw;
+    top: 20vh;
+    background-color: var(--topicblue);
+    border-radius: 50%;
+}
+
+
+.redirect{
+    position: absolute;
+    left: 85vw;
+    top: 45vh;
+    background-color: var(--topicblue);
+    border-radius: 50%;
+
+
+}
+
+.david{
+    position: absolute;
+    left: 85vw;
+    top: 70vh;
+
+}
+
+.inbox{position:relative;
+  
+top: 100%;
+transform:translateY(-60%);
+width:100%;
+height:100%;
+
+color: var(--topicblue);
+z-index: 100;
+ 
+    font-size: 1em;
+text-align: center;
+
+
+}
+
+.imagecontainerUnderconstructiongreen{height: 100vh;display:grid;
+    width:100vw;
+    background-color:#DDF4ED ;
+}
+.imagecontainerUnderconstructionyellow{height: 100vh;display:grid;
+    width:100vw;
+    background-color:var(--topicyellow) ;
+}
+.underconstruction{
+    height:80vh;
+    width:auto;
+    justify-self: center;
+    align-self: center;
+}
+
+.white {
+    color: white;
+}
+.drk {
+    color:var(--topicblue);
+}
+
+
+
+
+
+/* @media (max-width:700px){
+    .body{overflow-x: initial;}
+   .handy{ max-width: 50vw;}
+
+} */
+

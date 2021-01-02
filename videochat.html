@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style3.css">
+    <link rel ="stylesheet" href="quest3.css">
+</head>
+
+<body>
+
+
+
+
+    <div class="wrapper">
+        <div class="slide one">
+            <div class="circlewrapper">
+                <a href="index.html">
+                    <div class=" circle circle1 " id="home"></div>
+                </a>
+                <a href="dating3.html">
+                    <div class=" circle circle2 " id="dating"></div>
+                </a>
+
+                <a href="health.html">
+                    <div class=" circle circle3 " id="health"></div>
+                </a>
+                <a href="distancing.html">
+                    <div class="  circle circle4 " id="distancing"></div>
+                </a>
+                <a href="unlock.html">
+                    <div class="circle circle5">
+                        <img class="locknav" id="unlock" src="pics/unlock.png" alt="lockicon">
+
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+        <div class="slide two">
+            <!-- <div class="videocontainer"> -->
+
+                <video id="yourlover" controls>
+                    <source  src="video/videochat-01.mp4" type="video/mp4">
+                </video>
+
+                <video id="videoElement" autoplay></video>
+
+
+
+
+            <!-- </div> -->
+            <button class="screenshot magenta hell caps drk round" onclick="snap();"> save screenshot</button>
+            <button class="redirect magenta caps drk round" id="button2" onclick="redirect3()">
+                end the videochat</button>
+
+
+<button class="david green hell drk round caps" onclick="redirecttodavid();"> see more cool stuff by David Luepschen</button>
+
+
+        </div>
+
+
+
+    </div>
+    <script>
+
+sessionStorage.setItem("quest3solved", "true");
+
+
+        function redirect3() {
+            window.location.href = "dating3.html#biglock";
+
+
+
+
+        }
+
+        function redirecttodavid() {
+            window.location.href = "https://davidluepschen.studio/";
+
+
+
+
+        }
+
+
+
+        navigator.mediaDevices.getUserMedia({
+                video: {
+                    width: 300,
+                    height: 200
+                }
+                
+            })
+            .then(stream => {
+                document.getElementById("videoElement").srcObject = stream;
+                document.getElementById("videoElement").style.filter = "contrast(200%)	";
+
+                document.getElementById("yourlover").play();
+
+
+            })
+
+            
+
+
+        function snap() {
+            alert("I don't know how to do that! Take one by yourself!!!")
+
+        }
+
+        function throwError(e) {
+            alert(e.name);
+
+        }
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="quest3.css">
+
+
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="slide one">
+            <div class="circlewrapper">
+                <a href="index.html">
+                    <div class=" circle circle1 " id="home"></div>
+                </a>
+                <a href="dating3.html">
+                    <div class=" circle circle2 " id="dating"></div>
+                </a>
+
+                <a href="health.html">
+                    <div class=" circle circle3 " id="health"></div>
+                </a>
+                <a href="distancing.html">
+                    <div class="  circle circle4 " id="distancing"></div>
+                </a>
+                <a href="unlock.html">
+                    <div class="circle circle5">
+                        <img class="locknav" id="unlock" src="pics/unlock.png" alt="lockicon">
+
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+        <div class="slide two">
+
+
+
+            <img class="handy2" id="imgClickAndChange" src="pics/handy1.png" alt="handy">
+            <div class="screenwrap">
+            <div class="screen">
+                
+                
+                <button class="next green" id="buttonnext" onclick="changePerson()"><img class="iconbtn iconx"
+                        src="pics/iconx.png"></button>
+                <button class="msg" id="buttonmsg" onclick="showMsg()"><img class="iconbtn iconmsg" src="pics/iconmsg.png"></button>
+                <button class="heart magenta" id="buttonheart" onclick="showMatch()"><img class="iconbtn iconheart" src="pics/iconheart2.png"></button>
+            
+            </div>
+        </div>
+            <button class="hidden magenta hell round caps dark" id="startagain" onclick="open1Windowagain()">Try again</button>
+            <button class="hidden2 magenta round caps dark" id="videochat" onclick="openWindow2Videochat()">Go to the videochat</button>
+
+        
+        
+
+        </div>
+    </div>
+
+
+    <script>
+        var i = 1;
+
+        function changePerson() {
+
+
+            if (i < 9) {
+                var string = "pics/handy" + i + ".png";
+                var string2 = "pics/msg" + i + ".png"
+                var string3 = "pics/heart" + i + ".png"
+                var stringactual = document.getElementById("imgClickAndChange").src
+
+
+                if (stringactual.includes(string)|| stringactual.includes(string2)||stringactual.includes(string3)) {
+                   i= i+1;
+                string = "pics/handy" + i + ".png";
+
+                    document.getElementById("imgClickAndChange").src = string;
+                    console.log("it passees");
+                    console.log(string, "string");
+
+                }else{
+                    consol.log("changePeerson doeesnt work")
+                }
+
+                
+                
+            } else {
+                document.getElementById("imgClickAndChange").src = "pics/handystartagain.png";
+
+                document.getElementById("buttonnext").style.display = "none";
+                document.getElementById("buttonmsg").style.display ="none";
+                document.getElementById("buttonheart").style.display ="none";
+
+                console.log("it passees too");
+                var btnelement =document.getElementById("startagain");
+                btnelement.classList.add("startagain");
+               
+            }
+
+
+        }
+
+        function showMsg() {
+
+            if (i < 12) {
+                var string = "pics/handy" + i + ".png";
+                var string2 = "pics/msg" + i + ".png"
+                var string3 = "pics/heart" + i + ".png"
+
+
+                var stringactual = document.getElementById("imgClickAndChange").src
+                console.log(stringactual)
+
+                if (stringactual.includes(string)) {
+                    document.getElementById("imgClickAndChange").src = string2;
+                    console.log("its string1");
+                    console.log(string2);
+                } else if (stringactual.includes(string2)) {
+                   
+                    document.getElementById("imgClickAndChange").src = string;
+                    console.log(string);
+                } 
+                else if (stringactual.includes(string3)) {
+                    i=i+1;
+                    string2 = "pics/msg" + i + ".png";
+
+                    document.getElementById("imgClickAndChange").src = string2;
+                    console.log(string2);
+                }else {
+                    console.log("doesnt work show Msg");
+                }
+
+
+            }
+        }
+
+
+        function showMatch() {
+
+            if (i < 12) {
+                var string = "pics/handy" + i + ".png";
+                var string2 = "pics/msg" + i + ".png";
+                var string3 = "pics/heart" + i + ".png";
+                var stringactual = document.getElementById("imgClickAndChange").src
+               
+
+                if (stringactual.includes(string)||stringactual.includes(string2)){
+                    document.getElementById("imgClickAndChange").src = string3;
+                    stringactual = document.getElementById("imgClickAndChange").src
+
+                
+                } else if (stringactual.includes(string3)) {
+                    i=i+1;
+                    string = "pics/handy" + i + ".png";
+                    document.getElementById("imgClickAndChange").src = string;
+                    console.log(document.getElementById("imgClickAndChange").src);
+                    stringactual = document.getElementById("imgClickAndChange").src
+
+
+                }  
+            }
+            if (stringactual.includes("heart2.png")||
+                stringactual.includes("heart4.png")|| 
+                stringactual.includes("heart9.png")){
+                    document.getElementById("buttonnext").style.filter = "grayscale(100%)";
+                document.getElementById("buttonmsg").style.filter =  "grayscale(100%)";
+                document.getElementById("buttonheart").style.filter =" grayscale(100%)";
+    var btnelement =document.getElementById("videochat");
+                btnelement.classList.add("startvideochat");
+                stringactual = document.getElementById("imgClickAndChange").src
+
+        } else{                document.getElementById("videochat").display="none";
+
+
+        }
+        }
+
+        function open1Windowagain() {
+
+window.location.href = "tinderdate.html";
+}
+        function openWindow2Videochat() {
+
+            window.location.href = "videochat.html";
+        }
+    </script>
+
+</body>
+
+</html>

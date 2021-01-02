@@ -1,0 +1,22 @@
+
+
+.two {
+
+    background-color: var(--topicgreen);
+
+}
+
+
+
+.topictitle{   
+color: var(--topicblue);
+
+}
+.topicsubtitle{
+  color: var(--topicblue);}
+.caps{
+  color: var(--topicblue);}
+.fliesstext{
+    color: var(--topicblue);
+}
+

@@ -1,0 +1,372 @@
+.wrapper{width:100vw;
+    height:97vh;}
+
+.two{
+    background-color:var(--mygrey) ;
+    width:100%;
+    height:100%;
+
+}
+
+p{color:black;
+    line-height: 1.3;
+
+font-size:12pt;}
+
+.indexgrid {
+    position:relative;
+    display: grid;
+    grid-template-columns: 3fr 4fr 2fr 1fr repeat(2, 2fr) 0.25fr;
+    grid-template-rows: 2fr 2fr 2fr 2fr 2fr 0.5fr;
+    grid-column-gap: 1%;
+    grid-row-gap: 1%;
+    height: 100vh;
+
+
+overflow:hidden;
+    }
+
+
+    .div1index {position: relative;
+         grid-area: 1 / 1 / 2 / 2; 
+         align-items: center;
+         margin-left: 7vw;
+    display:grid;
+    overflow: hidden;
+    margin-top:1%
+
+}
+.div2index {position: relative;
+     grid-area: 1 / 2 / 2 / 3; 
+     display:grid;
+     overflow: hidden;
+     align-items:center;
+     overflow:hidden;
+     margin-top:-2%;
+
+     margin-top:1%
+
+
+    }
+
+
+.div2bindex {position: relative;
+     grid-area: 1 / 2 / 2 / 3; 
+     display:grid;
+     overflow: hidden;
+     align-self: center;
+     margin-top:-2%;
+    }
+    .div2bcindex {position: relative;
+        grid-area: 1 / 2 / 2 / 3; 
+        display:grid;
+        overflow: hidden;
+        align-self: center;
+       }
+.div3index { position: relative;
+    grid-area: 1 / 3 / 2 / 4; 
+    display:grid;
+    overflow:hidden;    margin-top:1%
+
+
+}
+.div4index { position: relative;
+    grid-area: 1 / 4 / 2 / 6;
+    display:grid;
+    text-align:center;
+    overflow: hidden;
+    align-items:center ;
+    margin-top:1%
+
+
+
+ }
+.div5index { position: relative;
+    grid-area: 1 / 6 / 2 / 7; 
+    display:grid;
+    text-align:right;
+    overflow: hidden;
+    align-items: center;
+    justify-items: end;
+    margin-top:1%;
+
+
+
+
+
+
+}
+.div6index {position: relative;
+     grid-area: 2 / 1 / 5 / 2; 
+     display:grid;
+     text-align:right;
+     margin-left: 7vw;
+     overflow: hidden;
+
+
+    }
+.div7index { position: relative;
+    grid-area: 2 / 2 / 3 / 3; 
+    display:grid;
+    text-align:left;
+    overflow: hidden;
+
+
+}
+.div8index { position: relative;
+    grid-area: 2 / 4 / 3 / 6; 
+    display:grid;
+    text-align:left;
+    overflow: hidden;
+
+
+
+
+}
+.div9index { position: relative;
+    grid-area: 2 / 3 / 3 / 4; 
+    display:grid;
+    overflow: hidden;
+
+
+}
+.div10index { position: relative;
+    grid-area: 2 / 4 / 3 / 6; 
+        display:grid;
+        overflow: hidden;
+        align-self: end;
+
+
+}
+
+.div11index {position: relative;
+     grid-area: 2 / 6 / 3 / 7; 
+        display:grid;
+        text-align:left;
+overflow: hidden;
+
+}
+
+.div12index { position: relative;
+    grid-area: 3 / 4 / 4 / 6; 
+        display:grid;
+width:100%;
+height:100%;  
+overflow: hidden;
+
+
+
+}
+
+.div13index { position: relative;
+     grid-area: 3 / 2 / 5 / 4; 
+        display:grid;
+        overflow:hidden;
+
+
+}
+
+.div14index { position: relative;
+    grid-area: 5 / 1 / 6 / 2; 
+        display:grid;
+        text-align:right;
+        margin-left: 7vw;
+        overflow: hidden;
+        align-items: start;
+
+
+
+
+}
+
+.div15index { position: relative;
+    grid-area: 5 / 2 / 6 / 3; 
+        display:grid;
+        text-align:left;
+        overflow: hidden;
+
+
+
+}
+
+.div16index { position: relative;
+    grid-area: 5 / 3 / 6 / 5; 
+        display:grid;
+        overflow: hidden;
+
+
+}
+
+.div17index {position: relative;
+    grid-area: 4 / 4 / 5 / 5; 
+        display:grid;
+        overflow:hidden;
+
+
+}
+
+.div18index { position: relative;
+    grid-area: 4 / 5 / 6 / 6; 
+        display:grid;
+        text-align:left;
+        overflow: hidden;
+
+
+
+}
+
+.div19index { position: relative;
+    grid-area: 3 / 6 / 4 / 7; 
+        display:grid;
+        text-align:left;
+        overflow: hidden;
+
+
+
+}
+
+.div20index { position: relative;
+    grid-area: 4 / 6 / 6 / 7; 
+        display:grid;
+        overflow: hidden;
+        text-align:left;
+
+
+
+}
+
+.fliesstext {
+    font-family: Lato;
+    font-style: normal;
+    font-weight: 200;
+    font-size: 12pt;
+    color:black;
+    padding-top: -10vw;
+}
+
+
+.boldfl{    font-weight: 700;
+}
+.small{font-size:9pt;}
+
+.lefttotitle{
+    width:12ch;
+}
+.righttotitle{
+    width:12ch;
+}
+.title{ position:relative;
+    align-items:end;
+    
+}
+
+.descriptiv{    font-size: 13pt;
+    line-height: 1.3;
+
+
+
+}
+
+.alignright{text-align: right;}
+
+.watch{
+    font-size: 20pt;
+    color:black;
+    font-family: Roboto;
+font-style: normal;
+
+}
+.how{
+    font-size: 24pt;
+    color:black;
+    font-family: Roboto;
+font-weight:500;
+
+}
+.videocontainer{display:grid;
+height:100%;
+width:auto}
+.video{position: relative;
+height:100%;
+    width:auto;
+}
+
+.coronus{
+    font-size: 30pt;
+    font-family: Roboto;
+    font-weight: 500;
+
+}
+.undertitle{
+margin-top:50%;}
+
+.imagecontainer{display: grid;
+    position:relative;
+    width:100%;
+    height:100%;
+}
+
+.kissingcouple{
+    align-self:center;
+
+    height:60%;
+    width:auto;
+}
+.quarantinetgth{ 
+    align-self:end;
+  height:auto;
+    width:100%;
+
+}
+.socialising1{
+    align-self:end;
+    height:100%;
+      width:100%;
+  
+}
+.hamsterin{
+    align-self:start;
+    height:auto;
+      width:100%;
+  
+
+}
+.tpaper{ align-self:start;
+    height:100%;
+      width:auto;}
+      
+.doll{ align-self:start;
+        height:auto;
+          width:100%;
+
+      }
+.mask{align-self:center;
+    height: 170%;
+      width:auto;
+
+  
+
+}
+
+img{
+    filter: grayscale(100%);
+
+}
+img:hover{
+    filter: grayscale(0%);
+
+
+}
+.articlegreen:hover{
+
+    color:var(--topicgreen);
+}
+.articlemagenta:hover{
+    color:var(--topicmagenta);
+
+}
+.articleyellow:hover{
+    color:var(--topicyellow);
+
+}
+

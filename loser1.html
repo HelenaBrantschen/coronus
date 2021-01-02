@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style3.css">
+    <link rel="stylesheet" href="quest3.css">
+</head>
+
+<body>
+
+    <div class="wrapper">
+        <div class="slide one">
+            <div class="circlewrapper">
+                <a href="index.html">
+                    <div class=" circle circle1 " id="home"></div>
+                </a>
+                <a href="dating3.html">
+                    <div class=" circle circle2 " id="dating"></div>
+                </a>
+
+                <a href="health.html">
+                    <div class=" circle circle3 " id="health"></div>
+                </a>
+                <a href="distancing.html">
+                    <div class="  circle circle4 " id="distancing"></div>
+                </a>
+                <a href="" onclick="showAlert()" value="Show alert box">
+                    <div class="circle circle5">
+                        <img class="locknav" id="unlock" src="pics/unlock.png" alt="lockicon">
+
+                    </div>
+                </a>
+            </div>
+        </div>
+
+
+
+        <div class="slide two">
+
+            <div class="gridlose1">
+                
+
+               
+
+                <div class="div1lose1">
+                    <div class="score" id="score" > </div>    
+                </div>
+                <div class="div2lose1"> 
+                 <p class="topictitle caps white">Oh No!</p>
+                 <p class="fliesstext white">Albert died. <br>
+                    Take a rest and try again once you feel better. </p>
+                </div>
+               
+                 <div class="div3lose1">
+                     <div>
+                        <button class="green round caps fliesstext" onclick="albertagain()">Try again</button>
+                     </div>
+                </div>
+                <div class="div4lose1"> 
+                    <div>
+                        <button class="green hell round caps fliesstext"onclick="redirectq1()">Give up</button>
+                     </div>
+
+                </div>
+                </div>
+            
+
+            </div>
+       
+
+    </div>
+
+
+
+
+    <script>
+        var score = localStorage.getItem("score");
+        var gscore = localStorage.getItem("gscore");
+
+
+        document.getElementById("score").innerHTML = 'You: ' + score + ' VS Coronus: ' + gscore;
+
+        localStorage.clear();
+
+
+        function showAlert(){
+
+            alert("You hav to solve all the quests to unlock this function!")
+        }
+
+        function albertagain (){
+            window.location.href = "albert.html";
+
+        }
+
+        function redirectq1 (){
+            window.location.href = "dating3.html#quest1";
+
+        }
+
+
+    </script>
+</body>
+
+</html>

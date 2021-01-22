@@ -283,12 +283,15 @@ font-style: normal;
 font-weight:500;
 
 }
-.videocontainer{display:grid;
+#vid-container{display:grid;
 height:100%;
 width:auto}
-.video{position: relative;
-height:100%;
-    width:auto;
+.video{
+    position: relative;
+    height: 130%;
+    width: 130%;
+    top: -15%;
+    left: -15%;
 }
 
 .coronus{
